@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Std I</title>
+		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/demo.css" />
+		<link rel="stylesheet" href="../../css/side.css" >
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body>
+		
+<div id="mySidenav" class="sidenav">
+<a href="../index.html">Home</a>
+  <a href="Content.html">Contents</a>
+  <button class="dropdown-btn" >Classes <i class="fa fa-caret-down"></i> 
+  </button>
+  <div class="dropdown-container">
+    <a href="Std II.html">Std II</a>
+    <a href="Std III.html">Std III</a>
+    <a href="Std IV.html">Std IV</a>
+    <a href="Std V.html">Std V</a>
+    <a href="Std VI.html">Std VI</a>
+    <a href="Std VII.html">Std VII</a>
+    <a href="Std VIII.html">Std VIII</a>
+    <a href="Std IX.html">Std IX</a>
+    <a href="Std X.html">Std X</a>
+    <a href="Std XI.html">Std XI</a>
+    <a href="Std XII.html">Std XII</a>
+  </div>
+<a href  onclick="closeNav()">&#x2190;</a>
+ 
+</div>
+
+
+<span style=" font-size:30px;cursor:pointer" onclick="openNav()">&#x2192</span>
+
+
+
+		
+
+<!--contents-->
+		
+		<main>
+			
+			<section class="content">
+				<div class="grid grid--effect-rigel">
+				<h2 class="content__title">Std I</h2>
+					<a href="https://drive.google.com/file/d/1ZuPJPK3qPD9gpmsLEtwKyNEBxWMV515e/view?usp=sharing" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="../../img/tamil.jpg" alt="Tamil image"/>
+							</div>
+							
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Tamil</h3>
+							
+						</div>
+					</a>
+					<a href="https://drive.google.com/file/d/1MSVjkQy0pwuFxgXHfr-r0d0wQuT0pWbI/view?usp=sharing" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="../../img/science.jpg" alt="Science image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Science</h3>
+							
+						</div>
+					</a>
+					<a href="https://drive.google.com/file/d/1fM1Bql6FYnETN2WhNsA_tr1Yk1ZJ-Gg4/view?usp=sharing" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="../../img/english.jpg" alt="English image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">English</h3>
+							
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				
+				<div class="grid grid--effect-canopus">
+					<a href="https://drive.google.com/file/d/1mdg4DbyJ_C_Pgtf0sFDBj6DqIKZ28F_S/view?usp=sharing" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="../../img/social.jpg" alt="Social image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Social Science</h3>
+							
+						</div>
+					</a>
+					<a href="https://drive.google.com/file/d/1MZTXvmwk8FNyvjzZ52_xKO0KYDxBPDvM/view?usp=sharing" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="../../img/math.jpg" alt="Math image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Maths</h3>
+							
+						</div>
+					</a>
+					
+			
+			</section>
+		</main>
+
+		<script src="../../js/anime.min.js"></script>
+		<script src="../../js/main.js"></script>
+		<script>
+		(function() {
+			[].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function(stackEl) {
+				new VegaFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function(stackEl) {
+				new CastorFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function(stackEl) {
+				new HamalFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function(stackEl) {
+				new PolarisFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function(stackEl) {
+				new AlphardFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function(stackEl) {
+				new AltairFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+				new RigelFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-canopus > .grid__item')).forEach(function(stackEl) {
+				new CanopusFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function(stackEl) {
+				new PolluxFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function(stackEl) {
+				new DenebFx(stackEl);
+			});
+		})();
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}		
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  
+		
+		
+		</script>
+	</body>
+</html>
