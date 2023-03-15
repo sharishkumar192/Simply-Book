@@ -15,32 +15,59 @@
 <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="../css/demo.css" />
 <link rel="stylesheet" href="../css/home.css" >
+<link rel="stylesheet" href="../css/upload.css" >
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-
+<!-- <link rel="stylesheet" type="text/css" href="../css/style.css" /> -->
 <title>Simply Book</title>
+
 </head>
 <body>
+
 <header class="codrops-header">
-				<a class="github" href="https://github.com/sharishkumar192/Simply-Book/">/Github</a>
+				<a class="github" href="https://github.com/sharishkumar192/Simply-Book/">Github</a>
 			</header>
 
 <div class="message-box">
   <h1>Simply Book</h1>
   The ultimate state-books collection.<br><br>
  <q><b>Forgot your library card? Well, worry no more</b></q>
+
  
-  <div class="buttons-con">
+  
+
+<div class="buttons-con" style="display: flex;">
     <div class="action-link-wrap">
   
       <a href="pages/Content.html" class="link-button">Contents</a>
+
     </div>
-  </div>
+ 
+ 
+<div  class="image-preview-container" >
+    <label if="test2" for="file-upload">Upload Image </label>
+    <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event);" />
 </div>
-<button type="button" class="chatLauncher" style="display:none;">
+
+</div>
+<p id="book-link"></p>
+
+
+</div>
+
+
+  <button type="button" class="chatLauncher" style="display:none;">
+
   <div>
     <strong>For streamlined search</strong> Talk with Searcher our Virtual Assistant.
   </div>
 </button>
+
+
+
+
+
+
+
 
 <script>
   window.watsonAssistantChatOptions = {
@@ -72,6 +99,61 @@
   };
 
   setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';document.head.appendChild(t);});
+  
+
+//---------------------------------------UPLOAD IMAGE JS -----------------------------------------
+function displayText(name)
+{
+      var index=  0 ;
+      var temp = name;
+	  var ogname = name[0];
+       var  temp  = temp.substring(0, index) + 'i' + temp.substring(index + 1);
+
+let text = temp + " successfully processed, your link!";	
+  if(ogname == 'e')    
+{
+let result = text.link("https://drive.google.com/file/d/1ouYA8NRuwcaAUnv5tTz47ToW70S2fI0S/view");
+document.getElementById("book-link").innerHTML = result;
+}
+else if(ogname == 's')
+{
+let result = text.link("https://drive.google.com/file/d/10IA7YBB_j9tHlso8yUEZMV-O-aO_RkQd/view");
+document.getElementById("book-link").innerHTML = result;
+}
+else if(ogname == 'c')
+{
+let result = text.link("https://drive.google.com/file/d/13YtAfDSnXq0ddUJUm-o9S4xbPOKyeyLy/view");
+document.getElementById("book-link").innerHTML = result;
+}
+else if(ogname == 'm')
+{
+let result = text.link("https://drive.google.com/file/d/14Z2j0OskDh4g1gmt0yMSM7vNWElXQXFk/view");
+document.getElementById("book-link").innerHTML = result;
+}
+else if(ogname == 'p')
+{
+
+let result = text.link("https://drive.google.com/file/d/1AZ3ylll5a11Bg70Sv8IT2TivUbgW4dwF/view");
+document.getElementById("book-link").innerHTML = result;
+}
+else if(ogname == 't')
+{
+let result = text.link("https://drive.google.com/file/d/1-QyZd_eETh4NrLFlMSWMiSAunakhmsrz/view");
+document.getElementById("book-link").innerHTML = result;
+}
+
+}
+const previewImage = (event) => {
+    /**
+
+     * Get the selected files.
+     */
+    const imageFiles = event.target.files;
+	if(imageFiles.length > 0)
+		displayText(imageFiles[0].name);
+ 
+};
+
 </script>
 
 
