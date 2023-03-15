@@ -1,0 +1,59 @@
+
+.image-preview-container {  
+ display: block;
+   
+    margin-left: 25%;
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position : relative;
+	 width: 35%;
+    height: 33px;
+	top : 34px;
+	left : -100px;
+	 font-weight: bold;
+  font-size: 14px;
+  }
+
+
+.image-preview-container :hover {
+  background: #5A5C6C;
+  color: #fff;
+cursor: pointer;
+transition: all 0.3s linear;
+}
+
+.image-preview-container input {
+    display: none;
+}
+
+
+.test1 : hover{
+	background-color : #000000 ;
+}
+
+label
+{
+ background-color: #00AAFF;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+ border-radius: 5px;
+ padding : 8px;
+	
+}
+p
+{	color : red;
+	font-family:Raleway; sans-serif;
+}
+
+
+
